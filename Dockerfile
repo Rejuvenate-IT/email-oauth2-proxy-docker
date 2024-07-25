@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir \
 	requests
 
 # Get the original script
-RUN wget -o emailproxy.py https://raw.githubusercontent.com/simonrob/email-oauth2-proxy/main/emailproxy.py
+RUN wget -O emailproxy.py https://raw.githubusercontent.com/simonrob/email-oauth2-proxy/main/emailproxy.py
 
 # Copy the Python script and shell script into the container
 COPY emailproxy.py /app/
