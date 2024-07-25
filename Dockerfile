@@ -11,6 +11,7 @@ RUN pip install --no-cache-dir \
     pyasyncore \
     boto3 \
     prompt_toolkit \
+    pyjwt \
     google-auth \
 	requests
 
