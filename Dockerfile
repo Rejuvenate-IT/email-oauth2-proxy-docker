@@ -15,6 +15,9 @@ RUN pip install --no-cache-dir \
     google-auth \
 	requests
 
+# Get the original script
+RUN curl -o emailproxy.py https://raw.githubusercontent.com/simonrob/email-oauth2-proxy/main/emailproxy.py
+
 # Copy the Python script and shell script into the container
 COPY emailproxy.py /app/
 COPY run_email_proxy.sh /app/
